@@ -1,0 +1,12 @@
+homepage: "https://github.com/your-org/your-project"
+language: c  # or jvm
+primary_contact: "maintainer@example.com"
+
+# Fuzzing configuration
+fuzzing_engines:
+  - libfuzzer
+  
+sanitizers:
+  - address      # detects memory corruption
+  - undefined    # detects undefined behavior
+  - memory       # detects uninitialized reads
