@@ -5,8 +5,8 @@ RUN apt-get update && apt-get install -y \
     make autoconf automake libtool pkg-config
 
 # Clone your project
-RUN git clone https://github.com/your-org/your-project.git
-WORKDIR /src/your-project
+RUN git clone https://github.com/Lowlaw4/aRepo01.git
+WORKDIR $SRC/
 
 # Copy the build script
 COPY build.sh $SRC/
