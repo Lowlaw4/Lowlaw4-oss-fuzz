@@ -1,6 +1,6 @@
 #include <stdint.h>
 #include <stdlib.h>
-#include <division.c>
+#include "division.h"
 
 int LLVMFuzzerTestOneInput(const uint8_t *data, size_t size) {
 // Ensure exactly 2 4-byte numbers (numerator and denominator) are read
