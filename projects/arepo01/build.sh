@@ -2,7 +2,7 @@
 
 
 # Compile source files with fuzzing instrumentation
-$CC $CFLAGS -c $SRC/arepo01/division.c -o division.o
+$CC $CFLAGS -c $SRC/arepo01/division.c -I$SRC/arepo01 -o division.o
 $CC $CFLAGS -c $SRC/harness.c -o harness.o
 
 # Link with libFuzzer
