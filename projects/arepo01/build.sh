@@ -1,5 +1,7 @@
 #!/bin/bash -eu
 
+cd $SRC/arepo01
+
 # Compile source files with fuzzing instrumentation
 $CC $CFLAGS -c division.c -o division.o
 $CC $CFLAGS -c harness.c -o harness.o
